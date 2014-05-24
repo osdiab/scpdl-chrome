@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "SCPDL",
+  "author": "Omar Diab",
+  "version": "0.1",
+  "homepage_url": "https://github.com/osdiab/scpdl-chrome",
+
+  "default_locale": "en",
+  "description": "Generate SCPD download script",
+  "icons": {
+    "16": "images/scpdl-16",
+    "48": "images/scpdl-48",
+    "128": "images/scpdl-128"},
+
+  "page_action": {
+    "default_icon": {
+        "19": "images/scpdl-19.png",
+    "    38": "images/scpdl-38.png"
+    },
+  "  default_title": "SCPDL",
+    "default_popup": "results.html"
+  },
+
+  "background": {
+    "persistent": false
+  }
+}
