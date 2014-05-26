@@ -1,0 +1,10 @@
+{
+    "result_header": {
+        "message": "Download SCPD videos",
+        "description": "Header for the results page"
+    },
+    "instructions": {
+        "message": "Run this in your terminal:",
+        "description": "Instructions to execute the code supplied"
+    }
+}
