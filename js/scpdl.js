@@ -2,7 +2,8 @@ chrome.tabs.executeScript({ file: '/js/scrape.js' }, function(result) {
     var generateCode = function(urls) {
         var code = [];
         for (var i = 0; i < urls.length; ++i) {
-            code[i] = ['wget -O', urls[i].date, urls[i].url].join(' ');
+            var filename = urls[i].date + '.mp4';
+            code[i] = ['wget -O', filename, urls[i].url].join(' ');
             console.log(code[i]);
         }
 

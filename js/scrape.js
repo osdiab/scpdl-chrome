@@ -15,14 +15,23 @@
         }
 
         if (maxRes === -1) {
-            alert('Error: no video found for this link!');
+            alert(
+                'Error: no video found for a link! Please tell the developer!');
             continue;
         }
 
+        var formatNumber = function(num, length) {
+            var result = '' + num;
+            while (result.length < length) {
+                result = '0' + result;
+            }
+            return result;
+        };
+
         var date = new Date(buttons[i].getAttribute('data-lecturedate'));
         var dateStr = [date.getFullYear(),
-            date.getMonth() + 1,
-            date.getDate()].join('-');
+            formatNumber(date.getMonth() + 1, 2),
+            formatNumber(date.getDate(), 2)].join('-');
         videoUrls.push({
             date: dateStr,
             url: videos[maxResIndex]['mp4-url']
