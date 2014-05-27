@@ -1,3 +1,21 @@
 body {
-    background: blue;
+    box-sizing: border-box;
+    background: white;
+    font-family: Helvetica;
+    padding: 0 1em;
+}
+
+#wrapper {
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+pre {
+    border-radius: 1em;
+    border-color: #bbb;
+    border-style: solid;
+    border-width: 1px;
+    background: #efefef;
+    padding: 1em;
+    width: 100%;
 }

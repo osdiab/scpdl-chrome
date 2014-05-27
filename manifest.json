@@ -6,7 +6,8 @@
     "homepage_url": "https://github.com/osdiab/scpdl-chrome",
 
     "permissions": [
-        "declarativeContent"
+        "declarativeContent",
+        "activeTab"
     ],
 
     "default_locale": "en",
