@@ -38,5 +38,5 @@
         });
     }
 
-    return videoUrls;
+    return videoUrls.reverse();
 })();
